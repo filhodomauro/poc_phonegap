@@ -1,0 +1,29 @@
+.form {
+  text-align: center;
+  margin: 10px auto 0;
+}
+
+.input-text-form {
+    display: block;
+	width: 100%;
+	margin: 0 auto;
+	outline: none;
+    width: 100%;
+    padding-top: 24px;
+  	padding-bottom: 24px;
+}
+
+.button-confirm {
+    width: 100%;
+}
+
+.button-cancel {
+
+}
+
+.rating-image {
+	width: 200px;
+	height: 300px;
+	border-radius: 4px;
+	padding-top: 2px;
+}

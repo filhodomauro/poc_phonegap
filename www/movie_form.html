@@ -1,0 +1,32 @@
+<html>
+	<head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/onsen-css-components.css" />
+        <link rel="stylesheet" type="text/css" href="css/form.css" />
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/lib.js"></script>
+        <script type="text/javascript" src="js/movie_form.js"></script>
+        <title>My Movies - New Movie</title>
+    </head>
+    <body onload="movie.load()">
+    	<div class="navigation-bar">
+			<div class="navigation-bar__right">
+				<button class="toolbar-button">
+					<span class="tab-bar__label" onclick="movie.back()">Cancel</span>
+				</button>
+			</div>
+			<div class="navigation-bar__center">
+				<span class="tab-bar__label">Add Movie</span>
+			</div>
+		</div>
+		<div class="form">
+    		<input type="text" class="text-input input-text-form" id="movie_title" placeholder="Movie Title"/>
+    		<img id="rating_image" src="img/logo.png" class="rating-image" onclick="movie.takePicture()"/>
+    		<button class="button button-confirm" onclick="movie.save()">Confirm</button>
+    	</div>
+    </body>
+</html>
